@@ -12,18 +12,18 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.8,<3.13
     - setuptools
     - pip
   run:
-    - python >=3.8
-    - numpy
+    - python >=3.8,<3.13
+    - numpy <2
     - tad-mctc
-    - pytorch >=1.11
+    - pytorch >=1.11,<2.4
 
 test:
   imports:
