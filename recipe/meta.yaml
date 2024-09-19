@@ -23,7 +23,7 @@ requirements:
     - python >=3.8,<3.13
     - numpy <2
     - tad-mctc
-    - pytorch >=1.11,<2.4
+    - pytorch >=1.11,<2.5
 
 test:
   imports:
