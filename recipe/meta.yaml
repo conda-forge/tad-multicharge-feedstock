@@ -1,5 +1,5 @@
 {% set name = "tad-multicharge" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tad_multicharge-{{ version }}.tar.gz
-  sha256: bba1b280d166b2cf1b9e8e6bd4143309994d8d632bb649afdddaa92b3b43e738
+  sha256: 1aa6d5a07087c6b9f3b4aeb89ee5f45ee2a65ef163f29761f74a91bd982fc0e0
 
 build:
   noarch: python
