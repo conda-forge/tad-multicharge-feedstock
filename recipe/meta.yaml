@@ -1,5 +1,5 @@
 {% set name = "tad-multicharge" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tad_multicharge-{{ version }}.tar.gz
-  sha256: 1aa6d5a07087c6b9f3b4aeb89ee5f45ee2a65ef163f29761f74a91bd982fc0e0
+  sha256: f663a4079a36cf862c8dd4e42eb2d283a072b3e172d8d27268058461030732fd
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -24,7 +24,7 @@ requirements:
     - python >={{ python_min }}
     - numpy <2
     - pytorch >=1.11,<3
-    - tad-mctc ==0.5.3
+    - tad-mctc ==0.6.1
     - typing-extensions
 
 test:
