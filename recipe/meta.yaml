@@ -1,5 +1,5 @@
 {% set name = "tad-multicharge" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/tad_multicharge-{{ version }}.tar.gz
-  sha256: 6cebbcb393825191c27a51dfe773fc38ec88520c14a35cd3e584370b992a247e
+  sha256: 09fbe8cfaedecffe393dd48ef76c75a22d227ccd26ffc13c5afe2d62f71bfb21
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy
-    - pytorch >=1.11,<3
-    - tad-mctc ==0.8.0
+    - pytorch >=2.6,<3
+    - tad-mctc >=0.9.1,<0.10.0
     - typing-extensions
 
 test:
