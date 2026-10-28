@@ -23,7 +23,8 @@ requirements:
     - python >={{ python_min }}
     - numpy
     - pytorch >=2.6,<3
-    - tad-mctc >=0.9.1,<0.10.0
+- pytorch >=2.7,<3
+- tad-mctc >=0.11.3,<0.12.0
     - typing-extensions
 
 test:
